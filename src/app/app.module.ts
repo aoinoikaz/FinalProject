@@ -3,13 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 
 // Declares and imports a component called AppComponent.
 
 @NgModule({
   // Any time a new component is generated it is added here
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
   ],
   // Import necessary modules
   imports: [
