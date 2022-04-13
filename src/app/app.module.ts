@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 // Declares and imports a component called AppComponent.
 
@@ -12,6 +14,8 @@ import { HomeComponent } from './components/home/home.component';
   declarations: [
     AppComponent,
     HomeComponent,
+    AboutComponent,
+    SidebarComponent,
   ],
   // Import necessary modules
   imports: [
