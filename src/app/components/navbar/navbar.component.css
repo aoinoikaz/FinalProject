@@ -1,15 +1,23 @@
 @layer {
 
   .navbar {
-    @apply text-center bg-black pb-4 pt-4
+    @apply bg-gray-900 font-bold pb-6 pt-6
   }
 
-  .navbar_items {
-    @apply inline-flex space-x-16
+  .main_navbar_items {
+    @apply inline-flex space-x-12 pl-8
   }
 
-  .navbar_items > li {
-    @apply text-white hover:text-blue-300 bg-black
+  .main_navbar_items > li {
+    @apply text-white hover:text-gray-400
+  }
+
+  .sub_navbar_items {
+    @apply inline-flex space-x-12 float-right pr-8
+  }
+
+  .sub_navbar_items > li {
+    @apply text-white hover:text-gray-400
   }
 
 }
