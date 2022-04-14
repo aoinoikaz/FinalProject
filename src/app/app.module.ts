@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 // Declares and imports a component called AppComponent.
 
@@ -15,7 +15,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    SidebarComponent,
+    NavbarComponent,
   ],
   // Import necessary modules
   imports: [

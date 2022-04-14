@@ -1,0 +1,11 @@
+.navbar {
+  @apply text-center
+}
+
+.navbar_items {
+  @apply space-y-4 text-blue-500
+}
+
+a:hover{
+  @apply text-blue-800
+}
