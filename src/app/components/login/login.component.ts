@@ -5,11 +5,37 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit
+{
 
-  constructor() { }
+  constructor()
+  {
 
-  ngOnInit(): void {
   }
 
+  ngOnInit(): void
+  {
+
+  }
+
+  /*
+  getAccountId() : integer
+  {
+
+  }*/
+
+  logoutUser() : boolean
+  {
+    return true;
+  }
+
+  loginUser() : boolean
+  {
+    return true;
+  }
+
+  isUserLoggedIn() : boolean
+  {
+    return false;
+  }
 }
