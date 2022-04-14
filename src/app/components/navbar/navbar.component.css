@@ -1,11 +1,17 @@
-.navbar {
-  @apply text-center
+@layer {
+
+  .navbar {
+    @apply text-center bg-black pb-4 pt-4
+  }
+
+  .navbar_items {
+    @apply inline-flex space-x-16
+  }
+
+  .navbar_items > li {
+    @apply text-white hover:text-blue-300 bg-black
+  }
+
 }
 
-.navbar_items {
-  @apply space-y-4 text-blue-500
-}
 
-a:hover{
-  @apply text-blue-800
-}
