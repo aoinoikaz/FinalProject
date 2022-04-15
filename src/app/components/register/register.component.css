@@ -1,3 +1,11 @@
 .register_page_body {
   @apply text-center font-light pt-64
 }
+
+input {
+  @apply border-2
+}
+
+#frmRegister {
+  @apply align-middle
+}

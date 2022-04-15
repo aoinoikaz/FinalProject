@@ -1,24 +1,19 @@
 <div class="login_page_body">
-  <form>
+  <form id="frmLogin">
     <div class="mb-3">
       <label for="txtUser" class="form-label">Username</label>
       <input type="text" id="txtUser" name="txtUser"
              class="form-control">
-
     </div>
-
     <div class="mb-3">
       <label for="txtPassword" class="form-label">Password</label>
       <input type="text" id="txtPassword" name="txtPassword"
              class="form-control">
-
     </div>
 
-    <button type="button" id="btnAdd" name="btnAdd"
-            class="btn btn-primary"
-            (click)="btnAdd_click()">
+    <button type="button" id="btnLogin" name="btnLogin"
+            class="btn btn-primary">
       Login
     </button>
-
   </form>
 </div>

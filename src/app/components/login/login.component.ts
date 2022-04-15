@@ -1,25 +1,41 @@
-import {Component, OnInit} from '@angular/core';
-//import {Book} from "../models/book.model";
-//import {DatabaseService} from "../services/database.service";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit
+{
 
-  // book: Book = new Book("noname", 10.12);
-  // constructor(private database: DatabaseService) {
-  // }
+  constructor()
+  {
 
-  ngOnInit(): void {
   }
 
-  btnAdd_click(){
-    // this.database.insert(this.book, ()=>{
-    //   console.log("Record added successfully");
-    //   alert("Record added successfully");
-    // });
+  ngOnInit(): void
+  {
+
+  }
+
+  /*
+  getAccountId() : integer
+  {
+
+  }*/
+
+  logoutUser() : boolean
+  {
+    return true;
+  }
+
+  loginUser() : boolean
+  {
+    return true;
+  }
+
+  isUserLoggedIn() : boolean
+  {
+    return false;
   }
 }

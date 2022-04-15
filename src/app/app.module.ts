@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 // Declares and imports a component called AppComponent.
 
@@ -18,8 +20,10 @@ import { RegisterComponent } from './components/register/register.component';
     HomeComponent,
     AboutComponent,
     NavbarComponent,
+    FooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent
   ],
   // Import necessary modules
   imports: [

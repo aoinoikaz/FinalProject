@@ -2,10 +2,14 @@
   @apply text-center font-light pt-64
 }
 
-#txtUser {
+input {
   @apply border-2
 }
 
-#txtPassword {
-  @apply border-2
+#frmLogin {
+  @apply align-middle
+}
+
+form.div {
+  @apply text-right
 }
