@@ -1,9 +1,9 @@
 @layer {
 
   .footer {
-    @apply bg-gray-900 font-bold pb-6 pt-6
+    @apply /*bg-gray-900*/ bg-purple-500 font-bold pb-6 pt-6
     /*text-3xl text-white text-center*/
-    border-t-4 border-red-500
+    /*border-t-4 border-red-500*/
     fixed
     inset-x-0
     bottom-0
