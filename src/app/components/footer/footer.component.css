@@ -1,33 +1,28 @@
-@layer
+.footer
 {
+  @apply /*bg-gray-900*/ bg-purple-500 /*bg-gray-200*/ font-bold pb-6 pt-6
+  /*text-3xl text-white text-center*/
+  /*border-t-4 border-red-500*/
+  fixed
+  inset-x-0
+  bottom-0
+  p-4
+}
 
-  .footer
-  {
-    @apply /*bg-gray-900*/ bg-purple-500 /*bg-gray-200*/ font-bold pb-6 pt-6
-    /*text-3xl text-white text-center*/
-    /*border-t-4 border-red-500*/
-    fixed
-    inset-x-0
-    bottom-0
-    p-4
-  }
+.main_footer_items {
+  @apply inline-flex space-x-12 pl-8
+}
 
-  .main_footer_items {
-    @apply inline-flex space-x-12 pl-8
-  }
+.main_footer_items > li {
+  @apply text-white hover:text-gray-400
+}
 
-  .main_footer_items > li {
-    @apply text-white hover:text-gray-400
-  }
+.sub_footer_items {
+  @apply inline-flex space-x-12 float-right pr-8
+}
 
-  .sub_footer_items {
-    @apply inline-flex space-x-12 float-right pr-8
-  }
-
-  .sub_footer_items > li {
-    @apply text-white
-  }
-
+.sub_footer_items > li {
+  @apply text-white
 }
 
 
