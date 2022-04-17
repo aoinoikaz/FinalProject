@@ -1,16 +1,61 @@
- <!-- <form id="registerPage" class="registerPage">
-    <label for="registerFormUsername">Username</label>
-    <input type="text" id="registerFormUsername" name="registerFormUsername">
+<form class="registerForm">
 
-    <label for="registerFormPassword">Password</label>
-    <input type="text" id="registerFormPassword" name="registerFormPassword">
+  <!-- Username label / input -->
+  <div class="registerForm_usernameLabelOuterContainer">
+    <div class="registerForm_usernameLabelInnerContainer">
+      <label class="registerForm_usernameLabel" for="registerForm_usernameTextBox">
+        Username
+      </label>
+    </div>
+    <div class="registerForm_usernameTextBoxContainer">
+      <input class="registerForm_usernameTextBox" id="registerForm_usernameTextBox" type="text" placeholder="Username">
+    </div>
+  </div>
 
-    <label for="registerFormVerifyPassword">Verify Password</label>
-    <input type="text" id="registerFormVerifyPassword" name="registerFormVerifyPassword">
+  <!-- Password label / input -->
+  <div class="registerForm_passwordLabelOuterContainer">
+    <div class="registerForm_passwordLabelInnerContainer">
+      <label class="registerForm_passwordLabel" for="registerForm_passwordTextBox">
+        Password
+      </label>
+    </div>
+    <div class="registerForm_passwordTextBoxContainer">
+      <input class="registerForm_passwordTextBox" id="registerForm_passwordTextBox" type="text" placeholder="**********">
+    </div>
+  </div>
 
-    <label for="registerFormEmail">Email</label>
-    <input type="text" id="registerFormEmail" name="registerFormEmail">
+  <!-- Verify password label / input -->
+  <div class="registerForm_verifyPasswordLabelOuterContainer">
+    <div class="registerForm_verifyPasswordLabelInnerContainer">
+      <label class="registerForm_verifyPasswordLabel" for="registerForm_verifyPasswordTextBox">
+        Verify Password
+      </label>
+    </div>
+    <div class="registerForm_verifyPasswordTextBoxContainer">
+      <input class="registerForm_verifyPasswordTextBox" id="registerForm_verifyPasswordTextBox" type="text" placeholder="**********">
+    </div>
+  </div>
 
-    <button type="button" id="registerFormButton" name="registerFormButton">Register</button>
-  </form>-->
+  <!-- Email label / input -->
+  <div class="registerForm_emailLabelOuterContainer">
+    <div class="registerForm_emailLabelInnerContainer">
+      <label class="registerForm_emailLabel" for="registerForm_emailTextBox">
+        Email
+      </label>
+    </div>
+    <div class="registerForm_emailTextBoxContainer">
+      <input class="registerForm_emailTextBox" id="registerForm_emailTextBox" type="text" placeholder="**********">
+    </div>
+  </div>
 
+  <!-- Register button -->
+  <div class="registerForm_buttonOuterContainer">
+    <div class="registerForm_buttonDiv"></div>
+    <div class="registerForm_buttonInnerContainer">
+      <button type="button" class="registerForm_button">
+        Register
+      </button>
+    </div>
+  </div>
+
+</form>
