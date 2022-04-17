@@ -1,6 +1,8 @@
-@layer {
+@layer
+{
 
-  .footer {
+  .footer
+  {
     @apply /*bg-gray-900*/ bg-purple-500 /*bg-gray-200*/ font-bold pb-6 pt-6
     /*text-3xl text-white text-center*/
     /*border-t-4 border-red-500*/
