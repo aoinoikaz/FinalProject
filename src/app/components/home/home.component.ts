@@ -12,7 +12,6 @@ import {HomeService} from "../../services/home.service";
 
 export class HomeComponent implements OnInit
 {
-  booksArray: string[] | undefined;
 
   constructor(private HomeService: HomeService)
   {
@@ -21,7 +20,6 @@ export class HomeComponent implements OnInit
 
   ngOnInit(): void
   {
-    this.booksArray = this.HomeService.booksArray;
   }
 
 }
