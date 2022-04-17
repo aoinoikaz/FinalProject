@@ -1,0 +1,55 @@
+.loginForm {
+  @apply w-full max-w-sm
+}
+
+/* Username label / input styles */
+.loginForm_usernameLabelOuterContainer {
+ @apply md:flex md:items-center mb-6
+}
+
+.loginForm_usernameLabelInnerContainer {
+  @apply md:w-1/3
+}
+
+.loginForm_usernameLabel {
+  @apply block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4
+}
+
+.loginForm_usernameTextBoxContainer {
+  @apply md:w-2/3
+}
+
+.loginForm_usernameTextBox {
+  @apply bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4
+  text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500
+}
+
+/* Password label / input styles */
+.loginForm_passwordLabelOuterContainer {
+  @apply md:flex md:items-center mb-6
+}
+
+.loginForm_passwordLabelInnerContainer {
+  @apply md:w-1/3
+}
+
+.loginForm_passwordLabel {
+  @apply block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4
+}
+
+.loginForm_passwordTextBoxContainer {
+  @apply md:w-2/3
+}
+
+.loginForm_passwordTextBox {
+  @apply bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4
+  text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500
+}
+
+
+/* Confirm password label / input styles */
+
+
+
+/* Email label / input styles*/
+
