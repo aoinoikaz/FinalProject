@@ -12,3 +12,4 @@ if (environment.production) {
 // THis is loading the module called AppModule
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+

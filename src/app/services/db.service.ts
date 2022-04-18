@@ -58,8 +58,10 @@ export class DbService
     });
   }
 
-  private dropTables(): void {
-    function txFunction(tx: any): void {
+  private dropTables(): void
+  {
+    function txFunction(tx: any): void
+    {
       var sql: string = "DROP TABLE IF EXISTS users;";
       var options:any = [];
       tx.executeSql(sql, options, () => {
@@ -72,38 +74,55 @@ export class DbService
   }
 
   public clearDB(): void{
-    let result = confirm("Really want to clear database?");
-    if (result) {
+    //let result = confirm("Really want to clear database?");
+    //if (result) {
       this.dropTables();
       this.db = null;
       alert("Database cleared");
-    }
+    //}
   }
 
-  public initDB(): void
+  public openDB(): void
   {
-    if (this.db == null)
+    // db connection not opened yet
+    if(this.db == null)
     {
       try
       {
         //create database
         this.createDatabase();
-        //create tables
-        this.createTables();
-      } catch (e)
+      }
+      catch (e)
       {
-        console.error("Error in initDB(): " + e);
+        console.error("Error in openDB(): " + e);
       }
     }
   }
 
-  getDatabase(): any {
-    this.initDB();
+  public openTables(): void
+  {
+    if (this.db != null)
+    {
+      try
+      {
+        //create tables
+        this.createTables();
+      }
+      catch (e)
+      {
+        console.error("Error in openTables(): " + e);
+      }
+    }
+  }
+
+  getDatabase(): any
+  {
     return this.db;
   }
 
   //crud operations
-  public insert(user: User, callback:any) {
+  public insert(user: User, callback:any)
+  {
     function txFunction(tx: any) {
       var sql: string = 'INSERT INTO users(username, password, email) VALUES(?,?,?);';
       var options = [user.username, user.password, user.email];

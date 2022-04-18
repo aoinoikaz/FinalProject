@@ -17,9 +17,10 @@ export class RegisterComponent implements OnInit
 
   ngOnInit(): void
   {
-
+    this.database.openDB();
+    //this.database.clearDB();
+    this.database.openTables();
   }
-
 
   onRegisterButtonClicked()
   {

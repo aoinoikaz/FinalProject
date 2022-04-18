@@ -15,22 +15,26 @@ export class LoginComponent implements OnInit
 
   }
 
+  ngOnInit(): void
+  {
+    this.database.openDB();
+    //this.database.clearDB();
+    this.database.openTables();
+  }
+
   onLoginButtonClicked(): void
   {
-    alert("On login button clicked: " + this.User.username + " | " + this.User.password);
-
-    // @ts-ignore
-    this.database.loginUser(this.User.username, this.User.password, ()=>
+    this.database.loginUser(this.User.username, this.User.password).then(loggedInUser =>
     {
-      console.log("User successfully logged in!");
-      alert("Logged in successfully!");
+      this.User = loggedInUser;
+      alert("User logged in successfully");
+    }).catch(err=>
+    {
+      console.error(err);
+      alert(err)
     });
   }
 
-  ngOnInit(): void
-  {
-
-  }
 
   logoutUser() : boolean
   {
