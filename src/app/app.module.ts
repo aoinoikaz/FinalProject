@@ -11,6 +11,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
+import {FormsModule} from "@angular/forms";
+
 // Declares and imports a component called AppComponent.
 
 @NgModule({
@@ -28,7 +30,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
   // Import necessary modules
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   // For registering services
   providers: [],

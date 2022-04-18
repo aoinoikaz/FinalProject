@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from "../models/user.model";
+import {DbService} from "../../services/db.service";
 
 @Component({
   selector: 'app-register',
@@ -7,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit
 {
-
-  constructor()
+  User: User = new User("", "", "");
+  constructor(private database: DbService)
   {
 
   }
@@ -18,9 +20,13 @@ export class RegisterComponent implements OnInit
 
   }
 
-  registerAccount() : boolean
-  {
-    return true;
-  }
 
+  onRegisterButtonClicked()
+  {
+    this.database.insert(this.User, ()=>
+    {
+      console.log("Record added successfully");
+      alert("Record added successfully");
+    });
+  }
 }

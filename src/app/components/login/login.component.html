@@ -8,7 +8,7 @@
       </label>
     </div>
     <div class="loginForm_usernameTextBoxContainer">
-      <input class="loginForm_usernameTextBox" id="loginForm_usernameTextBox" type="text" placeholder="Username">
+      <input [(ngModel)]="User.username" name="loginForm_usernameTextBox" class="loginForm_usernameTextBox" id="loginForm_usernameTextBox" type="text" placeholder="Username">
     </div>
   </div>
 
@@ -20,7 +20,7 @@
       </label>
     </div>
     <div class="loginForm_passwordTextBoxContainer">
-      <input class="loginForm_passwordTextBox" id="loginForm_passwordTextBox" type="text" placeholder="**********">
+      <input [(ngModel)]="User.password" name="loginForm_passwordTextBox" class="loginForm_passwordTextBox" id="loginForm_passwordTextBox" type="text" placeholder="**********">
     </div>
   </div>
 
@@ -28,7 +28,7 @@
   <div class="loginForm_buttonOuterContainer">
     <div class="loginForm_buttonDiv"></div>
     <div class="loginForm_buttonInnerContainer">
-      <button type="button" class="loginForm_button">
+      <button (click)="onLoginButtonClicked()" type="button" class="loginForm_button">
         Login
       </button>
     </div>

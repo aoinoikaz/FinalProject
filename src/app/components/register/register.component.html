@@ -8,7 +8,7 @@
       </label>
     </div>
     <div class="registerForm_usernameTextBoxContainer">
-      <input class="registerForm_usernameTextBox" id="registerForm_usernameTextBox" type="text" placeholder="Username">
+      <input [(ngModel)]="User.username" name="registerForm_usernameTextBox" class="registerForm_usernameTextBox" id="registerForm_usernameTextBox" type="text" placeholder="Username">
     </div>
   </div>
 
@@ -20,7 +20,7 @@
       </label>
     </div>
     <div class="registerForm_passwordTextBoxContainer">
-      <input class="registerForm_passwordTextBox" id="registerForm_passwordTextBox" type="text" placeholder="**********">
+      <input [(ngModel)]="User.password" class="registerForm_passwordTextBox" name="registerForm_passwordTextBox" id="registerForm_passwordTextBox" type="text" placeholder="**********">
     </div>
   </div>
 
@@ -32,7 +32,7 @@
       </label>
     </div>
     <div class="registerForm_verifyPasswordTextBoxContainer">
-      <input class="registerForm_verifyPasswordTextBox" id="registerForm_verifyPasswordTextBox" type="text" placeholder="**********">
+      <input class="registerForm_verifyPasswordTextBox" name="registerForm_verifyPasswordTextBox" id="registerForm_verifyPasswordTextBox" type="text" placeholder="**********">
     </div>
   </div>
 
@@ -44,7 +44,7 @@
       </label>
     </div>
     <div class="registerForm_emailTextBoxContainer">
-      <input class="registerForm_emailTextBox" id="registerForm_emailTextBox" type="text" placeholder="**********">
+      <input [(ngModel)]="User.email" class="registerForm_emailTextBox" name="registerForm_emailTextBox" id="registerForm_emailTextBox" type="text" placeholder="**********">
     </div>
   </div>
 
@@ -52,7 +52,7 @@
   <div class="registerForm_buttonOuterContainer">
     <div class="registerForm_buttonDiv"></div>
     <div class="registerForm_buttonInnerContainer">
-      <button type="button" class="registerForm_button">
+      <button (click)="onRegisterButtonClicked()" type="button" class="registerForm_button">
         Register
       </button>
     </div>
